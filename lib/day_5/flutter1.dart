@@ -28,7 +28,7 @@ class Flutter1 extends StatelessWidget {
 
             Text(
               "Seorang peserta pelatihan yang sedang mendalami Flutter di PPKD.",
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.left,
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
           ],
