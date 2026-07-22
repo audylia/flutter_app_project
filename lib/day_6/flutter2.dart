@@ -5,6 +5,12 @@ class Flutter2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(" Detail Merchant"),
+        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 219, 203, 143),
+      ),
+    );
   }
 }
