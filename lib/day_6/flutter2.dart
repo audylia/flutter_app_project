@@ -21,15 +21,12 @@ class Flutter2 extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
               child: Text(
                 "KSR PMI Unit UNJ",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
             ),
             SizedBox(height: 20),
@@ -45,9 +42,7 @@ class Flutter2 extends StatelessWidget {
                   SizedBox(width: 10),
                   Text(
                     "ksrpmiunitunj@gmail.com",
-                    style: TextStyle(
-                      fontSize: 16,
-                    ),
+                    style: TextStyle(fontSize: 16),
                   ),
                 ],
               ),
@@ -60,12 +55,7 @@ class Flutter2 extends StatelessWidget {
                   children: [
                     Icon(Icons.phone),
                     SizedBox(width: 10),
-                    Text(
-                      "081317592466",
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
-                    ),
+                    Text("081317592466", style: TextStyle(fontSize: 16)),
                   ],
                 ),
                 Spacer(),
@@ -76,9 +66,7 @@ class Flutter2 extends StatelessWidget {
                     SizedBox(width: 10),
                     Text(
                       "Aula GOR,\nKampus B UNJ",
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
+                      style: TextStyle(fontSize: 16),
                     ),
                   ],
                 ),
@@ -108,10 +96,7 @@ class Flutter2 extends StatelessWidget {
                           ),
                           Text(
                             "Calon Pendonor",
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.white,
-                            ),
+                            style: TextStyle(fontSize: 16, color: Colors.white),
                           ),
                         ],
                       ),
@@ -140,10 +125,7 @@ class Flutter2 extends StatelessWidget {
                           ),
                           Text(
                             "Kantong Darah",
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.white,
-                            ),
+                            style: TextStyle(fontSize: 16, color: Colors.white),
                           ),
                         ],
                       ),
@@ -158,9 +140,7 @@ class Flutter2 extends StatelessWidget {
               child: Text(
                 "DORA adalah aplikasi donor darah KSR PMI Unit UNJ yang membantu calon pendonor dan masyarakat mendapatkan informasi kegiatan donor darah, jadwal donor, serta memudahkan proses pendaftaran donor darah secara cepat dan mudah.",
                 textAlign: TextAlign.justify,
-                style: TextStyle(
-                  fontSize: 15,
-                ),
+                style: TextStyle(fontSize: 15),
               ),
             ),
             Spacer(),
