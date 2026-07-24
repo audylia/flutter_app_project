@@ -84,8 +84,8 @@ class Flutter3 extends StatelessWidget {
             const SizedBox(height: 10),
             TextField(
               decoration: InputDecoration(
-                prefixIcon: Icon(Icons.email),
-                hintText: "Email Pengguna",
+                suffixIcon: Icon(Icons.visibility),
+                hintText: "Masukkan Konfirmasi Password",
                 fillColor: Colors
                     .red[100], // Menentukan warna latar belakang TextField (merah muda).
                 filled:
