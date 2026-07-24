@@ -54,10 +54,8 @@ class TextFieldDay8 extends StatelessWidget {
             // TextField 4: Input dengan ikon di sisi kanan (suffixIcon).
             TextField(
               decoration: InputDecoration(
-                hintText: "Masukkan Kata Si Sandi",
-                suffixIcon: Icon(
-                  Icons.visibility,
-                ), // Menampilkan ikon mata di bagian akhir/kanan input.
+                hintText: "Nama Pengguna",
+                prefixIcon: Icon(Icons.person),
                 fillColor: Colors.red[100],
                 filled: true,
                 border: OutlineInputBorder(
