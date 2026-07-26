@@ -15,12 +15,11 @@ class TextFieldDay8 extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
+            // TextField 1: Input dasar untuk Email dengan border kotak (OutlineInputBorder).
             TextField(
               decoration: InputDecoration(
-                hintText:
-                    "Masukkan Email", // Teks petunjuk (placeholder) yang hilang saat mulai mengetik.
-                border:
-                    OutlineInputBorder(), // Garis batas luar berbentuk persegi default.
+                hintText: "Masukkan Email", // Teks petunjuk (placeholder) yang hilang saat mulai mengetik.
+                border: OutlineInputBorder(), // Garis batas luar berbentuk persegi default.
               ),
             ),
             // Memberikan jarak vertikal kecil antar TextField
@@ -30,9 +29,7 @@ class TextFieldDay8 extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: "Masukkan Password",
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(
-                    50,
-                  ), // Mengubah garis batas menjadi bentuk oval/rounded.
+                  borderRadius: BorderRadius.circular(50), // Mengubah garis batas menjadi bentuk oval/rounded.
                 ),
               ),
             ),
@@ -41,10 +38,8 @@ class TextFieldDay8 extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 hintText: "Masukkan Nama",
-                fillColor: Colors
-                    .red[100], // Menentukan warna latar belakang TextField (merah muda).
-                filled:
-                    true, // Wajib diset true agar properti fillColor dapat diterapkan.
+                fillColor: Colors.red[100], // Menentukan warna latar belakang TextField (merah muda).
+                filled: true,               // Wajib diset true agar properti fillColor dapat diterapkan.
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(50),
                 ),
@@ -54,8 +49,8 @@ class TextFieldDay8 extends StatelessWidget {
             // TextField 4: Input dengan ikon di sisi kanan (suffixIcon).
             TextField(
               decoration: InputDecoration(
-                hintText: "Nama Pengguna",
-                prefixIcon: Icon(Icons.person),
+                hintText: "Masukkan Kata Si Sandi",
+                suffixIcon: Icon(Icons.visibility), // Menampilkan ikon mata di bagian akhir/kanan input.
                 fillColor: Colors.red[100],
                 filled: true,
                 border: OutlineInputBorder(
