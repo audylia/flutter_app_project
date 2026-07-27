@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/day_9/contohsaja.dart';
+import 'package:flutter_app_project/day_9/flutter5.dart';
 import 'package:flutter_app_project/day_9/stateful.dart';
 
 void main() {
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: StatefulDay9(),
+      home: Flutter5()
     );
   }
 }

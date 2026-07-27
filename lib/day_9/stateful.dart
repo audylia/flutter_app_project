@@ -14,48 +14,49 @@ class _StatefulDay9State extends State<StatefulDay9> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+  
         children: [
-          SizedBox(height: 100),
+          SizedBox(height: 50),
 
-          // ElevatedButton(
-          //   onPressed: () {
-          //     debugPrint('Notifikasi Debug Console');
-          //     ScaffoldMessenger.of(
-          //       context,
-          //     ).showSnackBar(const SnackBar(content: Text('Kotal disentuh')));
-          //   },
-          //   child: const Text("Klik Saya"),
-          // ),
+          ElevatedButton(
+            onPressed: () {
+              debugPrint('Notifikasi Debug Console');
+              ScaffoldMessenger.of(
+                context,
+              ).showSnackBar(const SnackBar(content: Text('Kotal disentuh')));
+            },
+            child: const Text("Klik Saya"),
+          ),
 
-          // IconButton(
-          //   icon: Icon(Icons.access_alarms_rounded),
-          //   onPressed: () {
-          //     debugPrint("Ikon Klik");
-          //   },
-          // ),
+          IconButton(
+            icon: Icon(Icons.access_alarms_rounded),
+            onPressed: () {
+              debugPrint("Ikon Klik");
+            },
+          ),
 
-          // TextButton(
-          //   onPressed: () {
-          //     debugPrint("Tombol Teks Ditekan");
-          //   },
-          //   child: Text("Baca Selengkapnya"),
-          // ),
-          // GestureDetector(
-          //   onTap: () {
-          //     debugPrint("Disentuh Sekali");
-          //   },
-          //   onDoubleTap: () {
-          //     debugPrint("Disentuh Dua Kali");
-          //   },
-          //   onLongPress: () {
-          //     debugPrint("Tahan Lama");
-          //   },
-          //   child: Container(
-          //     color: Colors.blue,
-          //     padding: EdgeInsets.all(8),
-          //     child: Text("Tekan Saya"),
-          //   ),
-          // ),
+          TextButton(
+            onPressed: () {
+              debugPrint("Tombol Teks Ditekan");
+            },
+            child: Text("Baca Selengkapnya"),
+          ),
+          GestureDetector(
+            onTap: () {
+              debugPrint("Disentuh Sekali");
+            },
+            onDoubleTap: () {
+              debugPrint("Disentuh Dua Kali");
+            },
+            onLongPress: () {
+              debugPrint("Tahan Lama");
+            },
+            child: Container(
+              color: Colors.blue,
+              padding: EdgeInsets.all(8),
+              child: Text("Tekan Saya"),
+            ),
+          ),
           FloatingActionButton(
             onPressed: () {
               debugPrint("FAB ditekan");
@@ -63,12 +64,12 @@ class _StatefulDay9State extends State<StatefulDay9> {
             tooltip: "Tambah Data",
             child: Icon(Icons.add),
           ),
-          // InkWell(
-          //   onTap: () {
-          //     debugPrint("Gambar Diklik");
-          //   },
-          //   child: Text("Contoh"),
-          // ),
+          InkWell(
+            onTap: () {
+              debugPrint("Gambar Diklik");
+            },
+            child: Text("Contoh"),
+          ),
 
           // SizedBox(height: 50),
           // TextButton(
