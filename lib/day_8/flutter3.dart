@@ -9,10 +9,7 @@ class Flutter3 extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           "Registrasi & Edukasi",
-          style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         backgroundColor: const Color(0xffBD1B1B),
@@ -39,10 +36,7 @@ class Flutter3 extends StatelessWidget {
                 children: [
                   const Text(
                     "Form Registrasi",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
 
                   const SizedBox(height: 15),
@@ -125,10 +119,7 @@ class Flutter3 extends StatelessWidget {
 
             const Text(
               "Destinasi Wisata Populer",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 15),
@@ -141,7 +132,6 @@ class Flutter3 extends StatelessWidget {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               children: [
-
                 Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
@@ -164,7 +154,6 @@ class Flutter3 extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color(0xff326792),
                         borderRadius: BorderRadius.circular(20),
-                        
                       ),
                       child: const Text(
                         "Labuan Bajo",
@@ -176,14 +165,16 @@ class Flutter3 extends StatelessWidget {
                     ),
                   ],
                 ),
-               Stack(
+                Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         image: const DecorationImage(
-                          image: AssetImage("assets/images/gillitrawangan.jpeg"),
+                          image: AssetImage(
+                            "assets/images/gillitrawangan.jpeg",
+                          ),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -198,7 +189,6 @@ class Flutter3 extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color(0xff326792),
                         borderRadius: BorderRadius.circular(20),
-                        
                       ),
                       child: const Text(
                         "Gilli Trawangan",
@@ -210,7 +200,7 @@ class Flutter3 extends StatelessWidget {
                     ),
                   ],
                 ),
-               Stack(
+                Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
                     Container(
@@ -232,10 +222,9 @@ class Flutter3 extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color(0xff326792),
                         borderRadius: BorderRadius.circular(20),
-                        
                       ),
                       child: const Text(
-                        "Pulai Komodo",
+                        "Pulau Komodo",
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -266,7 +255,6 @@ class Flutter3 extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color(0xff326792),
                         borderRadius: BorderRadius.circular(20),
-                        
                       ),
                       child: const Text(
                         "Gunung Bromo",
@@ -278,7 +266,7 @@ class Flutter3 extends StatelessWidget {
                     ),
                   ],
                 ),
-               Stack(
+                Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
                     Container(
@@ -300,7 +288,6 @@ class Flutter3 extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color(0xff326792),
                         borderRadius: BorderRadius.circular(20),
-                        
                       ),
                       child: const Text(
                         "Raja Ampat",
@@ -312,7 +299,7 @@ class Flutter3 extends StatelessWidget {
                     ),
                   ],
                 ),
-               Stack(
+                Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
                     Container(
@@ -334,7 +321,6 @@ class Flutter3 extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: const Color(0xff326792),
                         borderRadius: BorderRadius.circular(20),
-                        
                       ),
                       child: const Text(
                         "Borobudur",
