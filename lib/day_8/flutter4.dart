@@ -9,10 +9,7 @@ class Flutter4 extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           "Manajemen Data Pelanggan",
-          style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         backgroundColor: const Color(0xffBD1B1B),
@@ -39,10 +36,7 @@ class Flutter4 extends StatelessWidget {
               children: [
                 const Text(
                   "Form Data Pelanggan",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
 
                 const SizedBox(height: 15),
@@ -108,10 +102,7 @@ class Flutter4 extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               "Daftar Pelanggan",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
           ),
 
@@ -204,7 +195,7 @@ class Flutter4 extends StatelessWidget {
                 "Farhiyah Suhlah Diaz",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              subtitle: Text("Non-Aktif"),
+              subtitle: Text("Aktif"),
               trailing: Icon(Icons.arrow_forward_ios),
             ),
           ),
