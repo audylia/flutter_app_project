@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Flutter5 extends StatefulWidget {
-  Flutter5({super.key});
+  const Flutter5({super.key});
 
   @override
   State<Flutter5> createState() => _Flutter5State();
@@ -13,8 +13,7 @@ class _Flutter5State extends State<Flutter5> {
   bool showSecretText = false;
   bool isFavorite = false;
   bool showDescription = false;
-
-  String inkWellMessage = "";
+  bool showMessage = false;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,6 @@ class _Flutter5State extends State<Flutter5> {
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
-
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,7 +36,6 @@ class _Flutter5State extends State<Flutter5> {
                 setState(() {
                   showSecretText = !showSecretText;
                 });
-
                 debugPrint("ElevatedButton ditekan");
               },
               child: Text("Klik Saya!"),
@@ -64,14 +61,11 @@ class _Flutter5State extends State<Flutter5> {
                 setState(() {
                   isFavorite = !isFavorite;
                 });
-
                 debugPrint("IconButton ditekan");
               },
             ),
 
-            Text(
-              isFavorite ? "Disukai!" : "Belum Disukai",
-            ),
+            Text(isFavorite ? "Disukai!" : "Belum Disukai"),
 
             SizedBox(height: 25),
 
@@ -82,13 +76,10 @@ class _Flutter5State extends State<Flutter5> {
                 setState(() {
                   showDescription = !showDescription;
                 });
-
                 debugPrint("TextButton ditekan");
               },
               child: Text(
-                showDescription
-                    ? "Sembunyikan Deskripsi"
-                    : "Lihat Deskripsi",
+                showDescription ? "Sembunyikan Deskripsi" : "Lihat Deskripsi",
               ),
             ),
 
@@ -114,13 +105,11 @@ class _Flutter5State extends State<Flutter5> {
                   debugPrint("InkWell ditekan");
 
                   setState(() {
-                    inkWellMessage = "Sentuhan terdeteksi!";
+                    showMessage = true;
                   });
 
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text("Sentuhan terdeteksi!"),
-                    ),
+                    SnackBar(content: Text("Sentuhan terdeteksi!")),
                   );
                 },
                 child: Container(
@@ -145,7 +134,7 @@ class _Flutter5State extends State<Flutter5> {
 
             SizedBox(height: 8),
 
-            Text(inkWellMessage),
+            if (showMessage) Text("Sentuhan terdeteksi!"),
 
             SizedBox(height: 25),
 
@@ -160,21 +149,18 @@ class _Flutter5State extends State<Flutter5> {
                   setState(() {
                     counter++;
                   });
-
                   debugPrint("Tap");
                 },
                 onDoubleTap: () {
                   setState(() {
                     counter += 2;
                   });
-
                   debugPrint("Double Tap");
                 },
                 onLongPress: () {
                   setState(() {
                     counter += 3;
                   });
-
                   debugPrint("Long Press");
                 },
                 child: Container(
@@ -199,24 +185,25 @@ class _Flutter5State extends State<Flutter5> {
 
             SizedBox(height: 15),
 
-            Text(
-              "• Tap = +1\n"
-              "• Double Tap = +2\n"
-              "• Long Press = +3",
-              textAlign: TextAlign.center,
+            Padding(
+              padding: EdgeInsets.only(left: 10),
+              child: Text(
+                "• Tap = +1\n"
+                "• Double Tap = +2\n"
+                "• Long Press = +3",
+                textAlign: TextAlign.left,
+              ),
             ),
 
             SizedBox(height: 30),
           ],
         ),
       ),
-
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
             counter--;
           });
-
           debugPrint("FAB ditekan");
         },
         tooltip: "Kurangi",

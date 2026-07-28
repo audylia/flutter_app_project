@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 
-class StatefulDay9 extends StatefulWidget {
-  const StatefulDay9({super.key});
+class Stateful2Day9 extends StatefulWidget {
+  const Stateful2Day9({super.key});
 
   @override
-  State<StatefulDay9> createState() => _StatefulDay9State();
+  State<Stateful2Day9> createState() => _Stateful2Day9State();
 }
 
-class _StatefulDay9State extends State<StatefulDay9> {
+class _Stateful2Day9State extends State<Stateful2Day9> {
   int counter = 0;
   bool showImage = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-  
         children: [
-          SizedBox(height: 50),
+          SizedBox(height: 100),
 
           ElevatedButton(
             onPressed: () {
@@ -25,7 +24,7 @@ class _StatefulDay9State extends State<StatefulDay9> {
                 context,
               ).showSnackBar(const SnackBar(content: Text('Kotal disentuh')));
             },
-            child: const Text("Klik Saya"),
+            child: const Text("Klik Me"),
           ),
 
           IconButton(
@@ -71,30 +70,31 @@ class _StatefulDay9State extends State<StatefulDay9> {
             child: Text("Contoh"),
           ),
 
-          // SizedBox(height: 50),
-          // TextButton(
-          //   onPressed: () {
-          //     setState(() {
-          //       showImage = !showImage;
-          //     });
-          //   },
-          //   child: Text(showImage ? "Sembunyikan Gambar" : "Tampilkan Gambar"),
-          // ),
-          // if (showImage)
-          //   Image.network(
-          //     "https://picsum.photos//200",
-          //     height: 120,
-          //     width: 120,
-          //   ),
+          SizedBox(height: 50),
+          TextButton(
+            onPressed: () {
+              setState(() {
+                showImage = !showImage;
+              });
+            },
+            child: Text(showImage ? "Sembunyikan Gambar" : "Tampilkan Gambar"),
+          ),
+          if (showImage)
+            Image.network(
+              "https://picsum.photos//200",
+              height: 120,
+              width: 120,
+            ),
 
-          // Text('Nilai $counter'),
-          // ElevatedButton(
-          //   child: Text('CounterUp'),
-          //   onPressed: () {
-          //     setState(() {
-          //       counter--;
-          //     });
-          //   },)
+          Text('Nilai $counter'),
+          ElevatedButton(
+            child: Text('CounterUp'),
+            onPressed: () {
+              setState(() {
+                counter--;
+              });
+            },
+          ),
         ],
       ),
     );
