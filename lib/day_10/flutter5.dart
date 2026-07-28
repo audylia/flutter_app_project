@@ -41,11 +41,7 @@ class _Flutter5State extends State<Flutter5> {
               child: Text("Klik Saya!"),
             ),
 
-            if (showSecretText)
-              Padding(
-                padding: EdgeInsets.only(top: 8),
-                child: Text("Halo, saya Developer!"),
-              ),
+            if (showSecretText) Center(child: Text("Halo, saya Developer!")),
 
             SizedBox(height: 25),
 
@@ -84,8 +80,7 @@ class _Flutter5State extends State<Flutter5> {
             ),
 
             if (showDescription)
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25),
+              Center(
                 child: Text(
                   "Flutter adalah framework dari Google untuk membuat aplikasi Android, iOS, Web, dan Desktop.",
                   textAlign: TextAlign.center,
@@ -98,23 +93,22 @@ class _Flutter5State extends State<Flutter5> {
 
             SizedBox(height: 10),
 
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25),
+            Center(
               child: InkWell(
                 onTap: () {
-                  debugPrint("InkWell ditekan");
-
                   setState(() {
                     showMessage = true;
                   });
+
+                  debugPrint("InkWell ditekan");
 
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text("Sentuhan terdeteksi!")),
                   );
                 },
                 child: Container(
-                  width: double.infinity,
-                  height: 90,
+                  width: 320,
+                  height: 80,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     color: Colors.blue,
@@ -134,7 +128,7 @@ class _Flutter5State extends State<Flutter5> {
 
             SizedBox(height: 8),
 
-            if (showMessage) Text("Sentuhan terdeteksi!"),
+            if (showMessage) Center(child: Text("Sentuhan terdeteksi!")),
 
             SizedBox(height: 25),
 
@@ -142,8 +136,7 @@ class _Flutter5State extends State<Flutter5> {
 
             SizedBox(height: 10),
 
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25),
+            Center(
               child: GestureDetector(
                 onTap: () {
                   setState(() {
@@ -164,8 +157,8 @@ class _Flutter5State extends State<Flutter5> {
                   debugPrint("Long Press");
                 },
                 child: Container(
-                  width: double.infinity,
-                  height: 90,
+                  width: 320,
+                  height: 100,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     color: Colors.blue,
@@ -175,7 +168,7 @@ class _Flutter5State extends State<Flutter5> {
                     "Angka: $counter",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 28,
+                      fontSize: 27,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -185,8 +178,7 @@ class _Flutter5State extends State<Flutter5> {
 
             SizedBox(height: 15),
 
-            Padding(
-              padding: EdgeInsets.only(left: 10),
+            Center(
               child: Text(
                 "• Tap = +1\n"
                 "• Double Tap = +2\n"
