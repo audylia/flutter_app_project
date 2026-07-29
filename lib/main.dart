@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => Flutter6(),
-        "/home": (context) => Homeflutter6(),
+        "/home": (context) => HomeFlutter6()
       },
     );
   }
