@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeRoutingDay11 extends StatelessWidget {
-  const HomeRoutingDay11({super.key});
+class Homeflutter6 extends StatelessWidget {
+  const Homeflutter6({super.key});
 
   @override
   Widget build(BuildContext context) {
