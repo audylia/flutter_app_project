@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/day_10/flutter5.dart';
+import 'package:flutter_app_project/day_11/flutter6.dart';
+import 'package:flutter_app_project/day_11/homeflutter6.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,18 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Flutter5(),
+      //push name
+      // initialRoute: "/",
+      // routes: {
+      //   "/": (context) => RoutingDay11(),
+      //   "/home": (context) => HomeRoutingDay11(),
+      // },
+      // home: Flutter6(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => Flutter6(),
+        "/home": (context) => Homeflutter6(),
+      },
     );
   }
 }
