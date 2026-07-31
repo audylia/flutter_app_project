@@ -44,20 +44,24 @@ class RoutingDay11 extends StatelessWidget {
               child: Text("Push"),
             ),
           ),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomeRoutingDay11()),
-                );
-              },
-              child: Text("Push"),
-            ),
-          ),
+          tombolPush(context),
         ],
 
         //REUSABLE
+      ),
+    );
+  }
+
+  Center tombolPush(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => HomeRoutingDay11()),
+          );
+        },
+        child: Text("Push"),
       ),
     );
   }

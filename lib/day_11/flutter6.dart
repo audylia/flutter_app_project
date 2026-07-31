@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/day_11/homeflutter6.dart';
 import 'package:flutter_app_project/day_11/widgets/primary_button.dart';
+import 'package:flutter_app_project/day_13/drawer.dart';
 
 class Flutter6 extends StatefulWidget {
   const Flutter6({super.key});
 
   @override
- State<Flutter6> createState() => _Flutter6State();
+  State<Flutter6> createState() => _Flutter6State();
 }
 
 class _Flutter6State extends State<Flutter6> {
@@ -16,11 +16,7 @@ class _Flutter6State extends State<Flutter6> {
       backgroundColor: Color(0xFFFDF9F5),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(
-            left: 24,
-            right: 24,
-            top: 55,
-          ),
+          padding: EdgeInsets.only(left: 24, right: 24, top: 55),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -87,15 +83,11 @@ class _Flutter6State extends State<Flutter6> {
                   contentPadding: EdgeInsets.all(10),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: Color(0xFFB0B0B0),
-                    ),
+                    borderSide: BorderSide(color: Color(0xFFB0B0B0)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: Color(0xFFB0B0B0),
-                    ),
+                    borderSide: BorderSide(color: Color(0xFFB0B0B0)),
                   ),
                 ),
               ),
@@ -129,15 +121,11 @@ class _Flutter6State extends State<Flutter6> {
                   contentPadding: EdgeInsets.all(10),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: Color(0xFFB0B0B0),
-                    ),
+                    borderSide: BorderSide(color: Color(0xFFB0B0B0)),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: Color(0xFFB0B0B0),
-                    ),
+                    borderSide: BorderSide(color: Color(0xFFB0B0B0)),
                   ),
                 ),
               ),
@@ -165,9 +153,7 @@ class _Flutter6State extends State<Flutter6> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (_) => HomeFlutter6(),
-                    ),
+                    MaterialPageRoute(builder: (_) => DrawerDay13()),
                   );
                 },
               ),
