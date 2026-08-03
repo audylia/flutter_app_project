@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_project/day_11/flutter6.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 

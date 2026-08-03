@@ -43,7 +43,7 @@ class _DrawerDay13State extends State<DrawerDay13> {
               leading: Icon(Icons.home),
               title: Text("home"),
               onTap: () {
-                changeBottom(1);
+                changeBottom(0);
               },
             ),
             ListTile(
@@ -57,14 +57,14 @@ class _DrawerDay13State extends State<DrawerDay13> {
               leading: Icon(Icons.business),
               title: Text("business"),
               onTap: () {
-                changeBottom(1);
+                changeBottom(2);
               },
             ),
             ListTile(
-              leading: Icon(Icons.widgets),
-              title: Text("widget"),
+              leading: Icon(Icons.input),
+              title: Text("Input Widget"),
               onTap: () {
-                changeBottom(1);
+                changeBottom(3);
               },
             ),
           ],
