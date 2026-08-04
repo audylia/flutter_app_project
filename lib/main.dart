@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/day_11/flutter6.dart';
 import 'package:flutter_app_project/tugas/bottomnav_flutter8.dart';
-import 'package:flutter_app_project/tugas/drawer_flutter7.dart';
 
 void main() async {
   runApp(const MyApp());

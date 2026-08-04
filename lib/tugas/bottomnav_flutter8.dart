@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/tugas/display_mode.dart';
-import 'package:flutter_app_project/tugas/pick_day.dart';
-import 'package:flutter_app_project/tugas/product_category.dart';
-import 'package:flutter_app_project/tugas/set_reminder.dart';
-import 'package:flutter_app_project/tugas/terms_condition.dart';
+import 'package:flutter_app_project/tugas/about_flutter8.dart';
+import 'package:flutter_app_project/tugas/drawer_flutter7.dart';
 
 class BottomNavFlutter8 extends StatefulWidget {
   const BottomNavFlutter8({super.key});
@@ -21,13 +18,7 @@ class _BottomNavFlutter8State extends State<BottomNavFlutter8> {
     setState(() {});
   }
 
-  final List<Widget> _widgetOptions = [
-    const TermsCondition(),
-    const DisplayMode(),
-    const ProductCategory(),
-    const PickDay(),
-    const SetReminder(),
-  ];
+  final List<Widget> _widgetOptions = [DrawerFlutter7(), AboutFlutter8()];
 
   @override
   Widget build(BuildContext context) {
@@ -38,27 +29,9 @@ class _BottomNavFlutter8State extends State<BottomNavFlutter8> {
           changeBottom(value);
         },
         currentIndex: _selectedBottom,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.check_box),
-            label: "Terms",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.dark_mode),
-            label: "Display",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.category),
-            label: "Category",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_month),
-            label: "Pick Day",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.alarm),
-            label: "Reminder",
-          ),
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.info), label: "About"),
         ],
       ),
       body: _widgetOptions.elementAt(_selectedBottom),

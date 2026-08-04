@@ -70,6 +70,9 @@ flutter:
     - assets/images/pulaukomodo.jpeg   
     - assets/images/My_Luv_Hirono.jpg
     - assets/images/Frame 4.jpg
+    - assets/images/screen.png
+    - assets/images/IconStudySprint.png 
+    - assets/images/IconStudySprint (1).png
   #   - images/a_dot_ham.jpeg
   fonts:
     - family: Poppins

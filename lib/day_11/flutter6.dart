@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_project/day_11/widgets/primary_button.dart';
-import 'package:flutter_app_project/day_13/drawer.dart';
 
 class Flutter6 extends StatefulWidget {
   const Flutter6({super.key});
@@ -153,7 +152,7 @@ class _Flutter6State extends State<Flutter6> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (_) => DrawerDay13()),
+                    MaterialPageRoute(builder: (_) => Drawer()),
                   );
                 },
               ),
