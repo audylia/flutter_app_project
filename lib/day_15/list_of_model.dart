@@ -4,7 +4,7 @@ import 'package:flutter_app_project/day_15/model/buah_model.dart';
 class ListOfModelDay15 extends StatelessWidget {
   ListOfModelDay15({super.key});
 
-    List<BuahModel> dataProduk = [
+  List<BuahModel> dataProduk = [
     BuahModel(nama: "Apel", harga: "25000", asal: "Jepang"),
     BuahModel(nama: "Pisang", harga: "15000", asal: "Indonesia"),
     BuahModel(nama: "Jeruk", harga: "20000", asal: "Spanyol"),
@@ -26,27 +26,7 @@ class ListOfModelDay15 extends StatelessWidget {
     BuahModel(nama: "Alpukat", harga: "40000", asal: "Meksiko"),
     BuahModel(nama: "Blueberry", harga: "60000", asal: "Kanada"),
   ];
-    // {"nama": "Apel", "harga": 25000, "asal": "Jepang"},
-    // {"nama": "Pisang", "harga": 15000, "asal": "Indonesia"},
-    // {"nama": "Jeruk", "harga": 20000, "asal": "Spanyol"},
-    // {"nama": "Mangga", "harga": 30000, "asal": "India"},
-    // {"nama": "Anggur", "harga": 40000, "asal": "Italia"},
-    // {"nama": "Semangka", "harga": 18000, "asal": "Brazil"},
-    // {"nama": "Melon", "harga": 22000, "asal": "Australia"},
-    // {"nama": "Kiwi", "harga": 50000, "asal": "Selandia Baru"},
-    // {"nama": "Nanas", "harga": 12000, "asal": "Filipina"},
-    // {"nama": "Stroberi", "harga": 45000, "asal": "Amerika Serikat"},
-    // {"nama": "Durian", "harga": 60000, "asal": "Thailand"},
-    // {"nama": "Rambutan", "harga": 25000, "asal": "Malaysia"},
-    // {"nama": "Pepaya", "harga": 10000, "asal": "Meksiko"},
-    // {"nama": "Jambu", "harga": 15000, "asal": "Vietnam"},
-    // {"nama": "Leci", "harga": 35000, "asal": "Cina"},
-    // {"nama": "Delima", "harga": 30000, "asal": "Iran"},
-    // {"nama": "Sirsak", "harga": 20000, "asal": "Karibia"},
-    // {"nama": "Ceri", "harga": 55000, "asal": "Turki"},
-    // {"nama": "Alpukat", "harga": 40000, "asal": "Meksiko"},
-    // {"nama": "Blueberry", "harga": 60000, "asal": "Kanada"},
-  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,7 +37,7 @@ class ListOfModelDay15 extends StatelessWidget {
             tileColor: index % 2 == 0 ? Colors.red[200] : Colors.white,
             title: Text(dataProduk[index].nama),
             subtitle: Text(dataProduk[index].asal),
-            trailing: Text(dataProduk[index]harga.toString()),
+            trailing: Text(dataProduk[index].harga.toString()),
           );
         },
       ),

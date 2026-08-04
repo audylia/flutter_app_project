@@ -73,6 +73,17 @@ flutter:
     - assets/images/screen.png
     - assets/images/IconStudySprint.png 
     - assets/images/IconStudySprint (1).png
+    - assets/images/rok.jpg
+    - assets/images/tank_top.jpg
+    - assets/images/sweater.jpg
+    - assets/images/rompi.jpg
+    - assets/images/kerudung.jpg
+    - assets/images/kaos.jpg
+    - assets/images/kaos_kaki.jpg
+    - assets/images/celana.jpg
+    - assets/images/dress.jpg
+    - assets/images/cardigan.jpg
+
   #   - images/a_dot_ham.jpeg
   fonts:
     - family: Poppins
