@@ -32,6 +32,7 @@ class _BottomNavFlutter8State extends State<BottomNavFlutter8> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.info), label: "About"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "List"),
         ],
       ),
       body: _widgetOptions.elementAt(_selectedBottom),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/day_15/list.dart';
+import 'package:flutter_app_project/day_15/list_of_map.dart';
+import 'package:flutter_app_project/day_15/list_of_model.dart';
 import 'package:flutter_app_project/extension/navigator.dart';
 import 'package:flutter_app_project/tugas/display_mode.dart';
 import 'package:flutter_app_project/tugas/pick_day.dart';
@@ -7,7 +10,7 @@ import 'package:flutter_app_project/tugas/set_reminder.dart';
 import 'package:flutter_app_project/tugas/terms_condition.dart';
 
 class DrawerFlutter7 extends StatefulWidget {
- const DrawerFlutter7({super.key});
+  const DrawerFlutter7({super.key});
 
   @override
   State<DrawerFlutter7> createState() => _DrawerFlutter7State();
@@ -28,22 +31,20 @@ class _DrawerFlutter7State extends State<DrawerFlutter7> {
     ProductCategory(),
     PickDay(),
     SetReminder(),
+    ListDataDay15(),
+    ListOfMapDay15(),
+    ListOfModelDay15(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Navigation Menu"),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: Text("Navigation Menu"), centerTitle: true),
       drawer: Drawer(
         child: ListView(
           children: [
-           DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
+            DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blue),
               child: Center(
                 child: Text(
                   "Navigation Menu",
@@ -93,6 +94,27 @@ class _DrawerFlutter7State extends State<DrawerFlutter7> {
               title: Text("Set Reminder"),
               onTap: () {
                 changeDrawer(4);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text("List"),
+              onTap: () {
+                changeDrawer(5);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text("List Of Map"),
+              onTap: () {
+                changeDrawer(6);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text("List Of Model"),
+              onTap: () {
+                changeDrawer(7);
               },
             ),
           ],
