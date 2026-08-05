@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/day_16/homr_abal_abal.dart';
+import 'package:flutter_app_project/day_16/home_abal_abal.dart';
 import 'package:flutter_app_project/extension/navigator.dart';
 import 'package:lottie/lottie.dart';
 
