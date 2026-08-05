@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_project/day_15/list.dart';
 import 'package:flutter_app_project/day_15/list_of_map.dart';
 import 'package:flutter_app_project/day_15/list_of_model.dart';
+import 'package:flutter_app_project/day_16/tecxt_from_field.dart';
 import 'package:flutter_app_project/extension/navigator.dart';
 import 'package:flutter_app_project/tugas/display_mode.dart';
 import 'package:flutter_app_project/tugas/pick_day.dart';
@@ -34,6 +35,7 @@ class _DrawerFlutter7State extends State<DrawerFlutter7> {
     ListDataDay15(),
     ListOfMapDay15(),
     ListOfModelDay15(),
+    TextFromDay16(),
   ];
 
   @override
@@ -115,6 +117,13 @@ class _DrawerFlutter7State extends State<DrawerFlutter7> {
               title: Text("List Of Model"),
               onTap: () {
                 changeDrawer(7);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text("Text From Field"),
+              onTap: () {
+                changeDrawer(8);
               },
             ),
           ],

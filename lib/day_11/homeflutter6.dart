@@ -14,10 +14,7 @@ class _HomeFlutter6State extends State<HomeFlutter6> {
       appBar: AppBar(
         title: Text(
           "Home Flutter 6",
-          style: TextStyle(
-            fontFamily: "Poppins",
-            fontWeight: FontWeight.w600,
-          ),
+          style: TextStyle(fontFamily: "Poppins", fontWeight: FontWeight.w600),
         ),
         backgroundColor: Color(0xFF7743DB),
         foregroundColor: Colors.white,
@@ -29,11 +26,7 @@ class _HomeFlutter6State extends State<HomeFlutter6> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.check_circle_rounded,
-                color: Colors.green,
-                size: 100,
-              ),
+              Icon(Icons.check_circle_rounded, color: Colors.green, size: 100),
 
               SizedBox(height: 24),
 

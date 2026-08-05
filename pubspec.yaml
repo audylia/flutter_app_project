@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   shimmer_animation: ^2.2.2+1
   intl: ^0.20.3
+  lottie: ^3.5.1
 
 dev_dependencies:
   flutter_test:
@@ -61,28 +62,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/IconDora.jpeg 
-    - assets/images/borobudur.jpeg 
-    - assets/images/gillitrawangan.jpeg 
-    - assets/images/gunungbromo.jpeg
-    - assets/images/labuanbajo.jpeg
-    - assets/images/rajaampat.jpeg 
-    - assets/images/pulaukomodo.jpeg   
-    - assets/images/My_Luv_Hirono.jpg
-    - assets/images/Frame 4.jpg
-    - assets/images/screen.png
-    - assets/images/IconStudySprint.png 
-    - assets/images/IconStudySprint (1).png
-    - assets/images/rok.jpg
-    - assets/images/tank_top.jpg
-    - assets/images/sweater.jpg
-    - assets/images/rompi.jpg
-    - assets/images/kerudung.jpg
-    - assets/images/kaos.jpg
-    - assets/images/kaos_kaki.jpg
-    - assets/images/celana.jpg
-    - assets/images/dress.jpg
-    - assets/images/cardigan.jpg
+    - assets/images/
+    - assets/animation/
 
   #   - images/a_dot_ham.jpeg
   fonts:

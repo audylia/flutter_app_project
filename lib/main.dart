@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/tugas/flutter9.dart';
-
+import 'package:flutter_app_project/tugas/drawerflutter9.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -39,7 +38,7 @@ class MyApp extends StatelessWidget {
       //   "/": (context) => RoutingDay11(),
       //   "/home": (context) => HomeRoutingDay11(),
       // },
-      home: Flutter9(),
+      home: DrawerFlutter9(),
       initialRoute: "/",
       // routes: {
       //   "/": (context) => Flutter6(),

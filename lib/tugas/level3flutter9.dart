@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_project/tugas/model/pakaian_wanita_model.dart';
 
-class Flutter9 extends StatelessWidget {
-  Flutter9({super.key});
+class Level3flutter9 extends StatelessWidget {
+  Level3flutter9({super.key});
 
   final List<PakaianWanitaModel> dataPakaian = [
     PakaianWanitaModel(
@@ -60,18 +60,12 @@ class Flutter9 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Flutter 9"),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text("Flutter 9"), centerTitle: true),
       body: ListView.builder(
         itemCount: dataPakaian.length,
         itemBuilder: (context, index) {
           return Card(
-            margin: const EdgeInsets.symmetric(
-              horizontal: 12,
-              vertical: 8,
-            ),
+            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             elevation: 3,
             child: ListTile(
               contentPadding: const EdgeInsets.all(10),
@@ -93,9 +87,7 @@ class Flutter9 extends StatelessWidget {
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.only(top: 6),
-                child: Text(
-                  dataPakaian[index].deskripsi,
-                ),
+                child: Text(dataPakaian[index].deskripsi),
               ),
               trailing: const Icon(Icons.arrow_forward_ios),
             ),
