@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class Homeflutter10 extends StatelessWidget {
+  const Homeflutter10({super.key, required this.email, this.password});
+  final String email;
+  final String? password;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [Text(email), Text(password ?? "Tidak ada password")],
+      ),
+    );
+  }
+}
