@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/day_17/service/preference_handler.dart';
-import 'package:flutter_app_project/tugas/flutter10.dart';
+import 'package:flutter_app_project/tugas/service/preference_handler_flutter11.dart';
+import 'package:flutter_app_project/tugas/views/splash_screen_flutter11.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await PreferenceHandler.init();
   runApp(const MyApp());
 }
@@ -32,7 +33,9 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+        seedColor: Colors.deepPurple,
+        ),
       ),
 
       //push name
@@ -41,8 +44,8 @@ class MyApp extends StatelessWidget {
       //   "/": (context) => RoutingDay11(),
       //   "/home": (context) => HomeRoutingDay11(),
       // },
-      home: Flutter10(),
-      initialRoute: "/",
+      home: SplashScreenFlutter11(),
+      // initialRoute: "/",
       // routes: {
       //   "/": (context) => Flutter6(),
       //   "/home": (context) => HomeFlutter6(),
@@ -118,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
           // action in the IDE, or press "p" in the console), to see the
           // wireframe for each widget.
-          mainAxisAlignment: .center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('You have pushed the button this many times:'),
             Text(

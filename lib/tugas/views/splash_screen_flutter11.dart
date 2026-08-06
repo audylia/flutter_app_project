@@ -4,33 +4,29 @@ import 'package:lottie/lottie.dart';
 import 'package:flutter_app_project/tugas/flutter10.dart';
 import 'package:flutter_app_project/tugas/homeflutter10.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+class SplashScreenFlutter11 extends StatefulWidget {
+  const SplashScreenFlutter11({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<SplashScreenFlutter11> createState() =>
+      _SplashScreenFlutter11State();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenFlutter11State extends State<SplashScreenFlutter11> {
   @override
   void initState() {
     super.initState();
-    goToPage();
+    goToLogin();
   }
 
-  void goToPage() async {
-    await Future.delayed(const Duration(seconds: 2));
+  void goToLogin() async {
+    await Future.delayed(const Duration(seconds: 3));
 
-    if (PreferenceHandler.isLogin) {
+    if (PreferenceHandler.isLogin == true) {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const Homeflutter10(
-            nama: "",
-            email: "",
-            hp: "",
-            sekolah: "",
-          ),
+          builder: (context) => const Homeflutter10(nama: '', email: '', hp: '', sekolah: '',),
         ),
       );
     } else {
@@ -48,9 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Center(
         child: Lottie.asset(
-          "assets/lottie/Correct Animation.json",
-          width: 200,
-          height: 200,
+          "assets/animation/error.json",
         ),
       ),
     );
