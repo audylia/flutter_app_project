@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/service/preference_handler.dart';
 import 'package:flutter_app_project/tugas/flutter10.dart';
 
 void main() async {
+  await PreferenceHandler.init();
   runApp(const MyApp());
 }
 
@@ -32,6 +34,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
+
       //push name
       // initialRoute: "/",
       // routes: {
