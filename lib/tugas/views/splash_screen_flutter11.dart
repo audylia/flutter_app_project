@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/tugas/bottomnav_flutter8.dart';
+import 'package:flutter_app_project/tugas/login_day_flutter11.dart';
 import 'package:flutter_app_project/tugas/service/preference_handler_flutter11.dart';
 import 'package:lottie/lottie.dart';
-import 'package:flutter_app_project/tugas/flutter10.dart';
-import 'package:flutter_app_project/tugas/homeflutter10.dart';
 
 class SplashScreenFlutter11 extends StatefulWidget {
   const SplashScreenFlutter11({super.key});
@@ -26,14 +26,14 @@ class _SplashScreenFlutter11State extends State<SplashScreenFlutter11> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const Homeflutter10(nama: '', email: '', hp: '', sekolah: '',),
+          builder: (context) => const BottomNavFlutter8(),
         ),
       );
     } else {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const Flutter10(),
+          builder: (context) => const LoginFlutter11()
         ),
       );
     }
@@ -44,7 +44,7 @@ class _SplashScreenFlutter11State extends State<SplashScreenFlutter11> {
     return Scaffold(
       body: Center(
         child: Lottie.asset(
-          "assets/animation/error.json",
+          "assets/animation/loading.json",
         ),
       ),
     );
