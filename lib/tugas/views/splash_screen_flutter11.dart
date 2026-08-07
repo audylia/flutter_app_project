@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/day_18/views/login_day_18.dart';
 import 'package:flutter_app_project/tugas/bottomnav_flutter8.dart';
-import 'package:flutter_app_project/tugas/login_day_flutter11.dart';
 import 'package:flutter_app_project/tugas/service/preference_handler_flutter11.dart';
 import 'package:lottie/lottie.dart';
 
@@ -33,7 +33,7 @@ class _SplashScreenFlutter11State extends State<SplashScreenFlutter11> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const LoginFlutter11()
+          builder: (context) => const LoginDay18SQFLITE()
         ),
       );
     }
