@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_project/day_18/views/login_flutter12.dart';
 import 'package:flutter_app_project/day_18/views/login_day_18.dart';
 import 'package:flutter_app_project/tugas/service/preference_handler_flutter11.dart';
 import 'package:flutter_app_project/tugas/views/splash_screen_flutter11.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
       //   "/": (context) => RoutingDay11(),
       //   "/home": (context) => HomeRoutingDay11(),
       // },
-      home: LoginDay18SQFLITE(),
+      home: LoginFlutter12()
       // initialRoute: "/",
       // routes: {
       //   "/": (context) => Flutter6(),

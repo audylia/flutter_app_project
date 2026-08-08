@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_project/day_18/views/data_user.dart';
-import 'package:flutter_app_project/day_18/views/login_day_18.dart';
+import 'package:flutter_app_project/day_18/views/data_user_flutter12.dart';
+import 'package:flutter_app_project/day_18/views/login_flutter12.dart';
 import 'package:flutter_app_project/extension/navigator.dart';
 import 'package:flutter_app_project/tugas/about_flutter8.dart';
 import 'package:flutter_app_project/tugas/drawer_flutter7.dart';
-import 'package:flutter_app_project/tugas/login_day_flutter11.dart';
 import 'package:flutter_app_project/tugas/service/preference_handler_flutter11.dart';
 
 class BottomNavFlutter8 extends StatefulWidget {
@@ -23,7 +22,7 @@ class _BottomNavFlutter8State extends State<BottomNavFlutter8> {
     setState(() {});
   }
 
-  final List<Widget> _widgetOptions = [const DrawerFlutter7(), const AboutFlutter8(), const DataUserDay18(), const LogoutScreen()];
+  final List<Widget> _widgetOptions = [const DrawerFlutter7(), const AboutFlutter8(), const DataUserFlutter12(), const LogoutScreen()];
 
   @override
   Widget build(BuildContext context) {
@@ -44,12 +43,12 @@ BottomNavigationBarItem(
     label: "About",
   ),
   BottomNavigationBarItem(
-    icon: Icon(Icons.home),
-    label: "Home",
-  ),
-  BottomNavigationBarItem(
     icon: Icon(Icons.person),
     label: "User",
+  ),
+    BottomNavigationBarItem(
+    icon: Icon(Icons.logout),
+    label: "Logout",
   ),
         ],
       ),
@@ -69,7 +68,7 @@ class LogoutScreen extends StatelessWidget {
         PreferenceHandler.logOut();
 
         // 2. Mengarahkan pengguna kembali ke halaman LoginDay17 serta menghapus seluruh tumpukan navigasi sebelumnya (pushAndRemoveAll).
-        context.pushAndRemoveAll(const LoginDay18SQFLITE());
+        context.pushAndRemoveAll(const LoginFlutter12());
       },
       child: const Center(
         child: Icon(Icons.logout, size: 48),
